@@ -1,0 +1,658 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile max-width 480px, 
+low resolution tablets and ipads 767px, 
+tablet portrate mode 1024px, 
+desktop max width 1280px, 
+and desktop large screen 1281px and greater */
+
+/* Desktop mode */
+@media (min-width:1024px) {
+    .container {
+        width: 100%;
+        background-color: #202a37;
+    }
+
+    .page {
+        width: 1024px;
+        margin: auto;  
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+    .logo{
+        color: white;
+        font-family: roboto;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .links ul li{
+        color: rgb(218, 218, 218);
+        list-style: none;
+        font-family: roboto;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .links ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .hero {
+        color: white;
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .hero .text{
+        padding-right: 40px;
+        
+    }
+
+    .hero .text .heading {
+        font-family: roboto;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .hero .text .para{
+        font-family: roboto;
+        font-size: 18px;
+        font-weight: 300;
+        color: rgb(218, 218, 218);
+        padding-top: 5px;
+    }
+    
+    .hero .text .button{
+        padding-top: 15px;
+    }
+
+    .hero .text .button button{
+        background-color:#3b82f6;
+        color: white;
+        padding: 10px 40px 10px 40px;
+        font-size: 16px;
+        font-family: roboto;
+        font-weight: 500;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .hero .picture{
+        padding-left: 30px;
+    }
+
+    .hero .picture img{
+        width: 520px;
+        height: 240px;
+        object-fit: fill;
+    }
+
+    .title {
+        font-family: roboto;
+        font-size: 34px;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .imagebox {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding-bottom: 100px;
+    }
+    
+    .imagebox .boxwithdesc .box{ 
+        width: 170px;
+        height: 170px;
+        border: 4px solid #3b82f6;
+        border-radius: 15px;
+    }
+
+    .imagebox .boxwithdesc .desc{
+        font-family: roboto;
+        font-size: 18px;
+        width: 170px;
+        text-align: center;
+        color: rgb(112, 112, 112);
+        padding-top: 5px;
+        font-weight: 400;
+    }
+
+    .container-quote{
+        background-color: #e5e7eb;
+    }
+
+    .quote{
+        padding: 150px 120px 100px 120px;
+    }
+
+    .quote .quote-text{
+        font-family: roboto;
+        font-size: 36px;
+        color: #1f2937;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    .quote .quote-author {
+        font-family: roboto;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;
+    }
+
+    .cta-main {
+        padding: 100px 0 100px 0;
+        /* background-color: #3882f6; */
+    }
+
+    .cta-box {
+        background-color: #3b82f6;
+        padding: 50px 120px 50px 120px;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cta-box .cta-content .cta-title{
+        font-size: 22px;
+        font-family: roboto;
+        font-weight: 500;
+    }
+
+    .cta-box .cta-content .cta-desc {
+        font-size: 18px;
+        font-family: roboto;
+        font-weight: 400;
+        color: rgb(228, 228, 228);
+    }
+
+    .cta-box .cta-button button{
+        color: white;
+        background-color: #3b82f6;
+        border-color: white;
+        font-family: roboto;
+        font-size: 16px;
+        padding: 5px 30px 5px 30px;
+        border-radius: 5px;
+        font-weight: 500;
+        border: 2px solid;
+    }
+
+    .cta-box .cta-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-footer{
+        background-color:#202a37;
+        color: white;
+    }
+
+    .container-footer .footer-text {
+        padding: 50px 0 50px 0;
+        text-align: center;
+        font-family: roboto;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Tablet mode */
+@media (min-width: 481px) and (max-width: 1023px){
+    .container {
+        width: 100%;
+        background-color: #202a37;
+    }
+
+    .page {
+        width: 90%;
+        margin: auto;  
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        align-items: center;
+    }
+
+    .logo{
+        color: white;
+        font-family: roboto;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    
+    .links ul li{
+        color: rgb(218, 218, 218);
+        list-style: none;
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .links ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 22px;
+    }
+
+    .hero {
+        color: white;
+        display: flex;
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+
+    .hero .text{
+        padding-right: 20px;
+        
+    }
+
+    .hero .text .heading {
+        font-family: roboto;
+        font-size: 42px;
+        font-weight: 600;
+    }
+
+    .hero .text .para{
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(218, 218, 218);
+        padding-top: 5px;
+    }
+    
+    .hero .text .button{
+        padding-top: 15px;
+    }
+
+    .hero .text .button button{
+        background-color:#3b82f6;
+        color: white;
+        padding: 8px 30px 8px 30px;
+        font-size: 14px;
+        font-family: roboto;
+        font-weight: 400;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .hero .picture img{
+        width: 420px;
+        height: 220px;
+        object-fit: contain;
+    }
+
+    .title {
+        font-family: roboto;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .imagebox {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-bottom: 100px;
+    }
+    
+    .imagebox .boxwithdesc .box{ 
+        width: 140px;
+        height: 140px;
+        border: 4px solid #3b82f6;
+        border-radius: 15px;
+    }
+
+    .imagebox .boxwithdesc .desc{
+        font-family: roboto;
+        font-size: 14px;
+        width: 140px;
+        text-align: center;
+        color: rgb(112, 112, 112);
+        padding-top: 5px;
+        font-weight: 400;
+    }
+
+    .container-quote{
+        background-color: #e5e7eb;
+    }
+
+    .quote{
+        padding: 80px 100px 80px 100px;
+    }
+
+    .quote .quote-text{
+        font-family: roboto;
+        font-size: 30px;
+        color: #1f2937;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    .quote .quote-author {
+        font-family: roboto;
+        font-size: 20px;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;
+    }
+
+    .cta-main {
+        padding: 80px 0 80px 0;
+        /* background-color: #3882f6; */
+    }
+
+    .cta-box {
+        background-color: #3b82f6;
+        padding: 50px 100px 50px 100px;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cta-box .cta-content .cta-title{
+        font-size: 20px;
+        font-family: roboto;
+        font-weight: 500;
+    }
+
+    .cta-box .cta-content .cta-desc {
+        font-size: 16px;
+        font-family: roboto;
+        font-weight: 400;
+        color: rgb(228, 228, 228);
+    }
+
+    .cta-box .cta-button button{
+        color: white;
+        background-color: #3b82f6;
+        border-color: white;
+        font-family: roboto;
+        font-size: 14px;
+        padding: 5px 30px 5px 30px;
+        border-radius: 5px;
+        font-weight: 500;
+        border: 2px solid;
+    }
+
+    .cta-box .cta-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-footer{
+        background-color:#202a37;
+        color: white;
+    }
+
+    .container-footer .footer-text {
+        padding: 40px 0 40px 0;
+        text-align: center;
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Smartphone mode */
+@media (max-width:480px){
+    .container {
+        width: 100%;
+        background-color: #202a37;
+    }
+
+    .page {
+        width: 90%;
+        margin: auto;  
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        align-items: center;
+    }
+
+    .logo{
+        color: white;
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .links ul li{
+        color: rgb(218, 218, 218);
+        list-style: none;
+        font-family: roboto;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .links ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .hero {
+        color: white;
+        /* display: flex; */
+        
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+
+    .hero .text{
+        /* padding-right: 40px; */
+        
+    }
+
+    .hero .text .heading {
+        font-family: roboto;
+        font-size: 42px;
+        font-weight: 600;
+    }
+
+    .hero .text .para{
+        font-family: roboto;
+        font-size: 16px;
+        font-weight: 300;
+        color: rgb(218, 218, 218);
+        padding-top: 5px;
+    }
+    
+    .hero .text .button{
+        padding-top: 15px;
+    }
+
+    .hero .text .button button{
+        background-color:#3b82f6;
+        color: white;
+        padding: 8px 30px 8px 30px;
+        font-size: 14px;
+        font-family: roboto;
+        font-weight: 400;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .hero .picture img{
+        /* width: 420px; */
+        /* height: 220px; */
+        /* object-fit: contain; */
+        display: none;
+    }
+
+    .title {
+        font-family: roboto;
+        font-size: 26px;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .imagebox {
+        /* width: 440px; */
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    .imagebox .boxwithdesc{
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    
+    .imagebox .boxwithdesc .box{ 
+        width: 130px;
+        height: 130px;
+        border: 4px solid #3b82f6;
+        border-radius: 15px;
+    }
+
+    .imagebox .boxwithdesc .desc{
+        font-family: roboto;
+        font-size: 14px;
+        width: 130px;
+        text-align: center;
+        color: rgb(112, 112, 112);
+        padding-top: 5px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+
+    .container-quote{
+        background-color: #e5e7eb;
+    }
+
+    .quote{
+        padding: 50px 30px 50px 30px;
+    }
+
+    .quote .quote-text{
+        font-family: roboto;
+        font-size: 20px;
+        color: #1f2937;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    .quote .quote-author {
+        font-family: roboto;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 10px;
+    }
+
+    .cta-main {
+        padding: 30px 0 30px 0;
+        /* background-color: #3882f6; */
+    }
+
+    .cta-box {
+        background-color: #3b82f6;
+        padding: 20px 20px 20px 20px;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cta-box .cta-content .cta-title{
+        font-size: 16px;
+        font-family: roboto;
+        font-weight: 500;
+    }
+
+    .cta-box .cta-content .cta-desc {
+        font-size: 12px;
+        font-family: roboto;
+        font-weight: 400;
+        color: rgb(228, 228, 228);
+    }
+
+    .cta-box .cta-button button{
+        color: white;
+        background-color: #3b82f6;
+        border-color: white;
+        font-family: roboto;
+        font-size: 12px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 3px;
+        font-weight: 500;
+        border: 1px solid;
+    }
+
+    .cta-box .cta-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-footer{
+        background-color:#202a37;
+        color: white;
+    }
+
+    .container-footer .footer-text {
+        padding: 20px 0 20px 0;
+        text-align: center;
+        font-family: roboto;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+}
+
